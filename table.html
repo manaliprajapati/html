@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+    <style>
+         
+body{
+  background-image: url("bird.jpg");
+}
+
+  #customers {
+  font-family: Arial, Helvetica, sans-serif;
+   border-radius: 25px;
+  border: 2px solid #73AD21;
+  box-shadow: 1px 2px 3px blue;
+  padding: 20px;
+  text-shadow: 0 0 3px pink; 
+  height: 150px;  
+  width: 100%;
+  }
+#customers th {
+  
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#customers th:hover{
+    color:black;
+    background-color: cadetblue;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:hover {background-color: #ddd;}
+/*h1{
+    text-align: center;
+    color:tan;
+h1:hover{
+    color:violet
+}*/
+
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  font-size: large;
+  background-color: thistle;
+  transition: width 2s;
+}
+
+div.test:hover {
+  overflow: visible;
+   width: 300px;
+}
+
+.page {
+  display: inline-block;
+}
+
+.page a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  
+}
+
+.page a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.page a:hover:not(.active) {background-color: #ddd;}
+
+#customers tr:nth-child(even){background-color:bisque;}
+
+</style>
+
+</head>
+<body>
+    
+<div class="test" style="text-overflow:ellipsis;">Customer Table will not fit in the box
+</div>
+
+
+<table id="customers"><br><br>
+ 
+  <tr>
+    <th> Customer Name</th>
+    <th>Contact No</th>
+    <th>Customer.Id</th>
+    <th>Invoice.No</th>
+    <th>Billing Date</th>
+    
+  </tr>
+  <tr>
+    <td>Manali</td>
+    <td>1234567890</td>
+    <td>001</td>
+    <td>10123</td>
+    <td>12-12-2022</td>
+  </tr>
+  <tr>
+    <td>Zalak</td>
+    <td>1234567890</td>
+    <td>002</td>
+    <td>10134</td>
+    <td>15-12-2022</td>
+  </tr>
+  <tr>
+    <td>Nisarg</td>
+    <td>1234567890</td>
+    <td>003</td>
+    <td>10145</td>
+    <td>20-12-2022</td>
+  </tr>
+  <tr>
+    <td>Yatvik</td>
+    <td>1234567890</td>
+    <td>004</td>
+    <td>10156</td>
+    <td>25-12-2022</td>
+  </tr>
+  
+    <td>Parth</td>
+   <td>1234567890</td>
+    <td>005</td>
+    <td>10167</td>
+    <td>30-12-2022</td>
+  </tr>
+  <tr>
+    <td>Priyanshi</td>
+   <td>1234567890</td>
+    <td>006</td>
+    <td>10178</td>
+    <td>10-01-202</td>
+  </tr>
+  <tr>
+    <td>Komal</td>
+     <td>1234567890</td>
+    <td>007</td>
+    <td>10189</td>
+    <td>13-01-2023</td>
+  </tr>
+</table>
+<br>
+<div class="page">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
+
+</body>
+</html>

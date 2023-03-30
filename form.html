@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Form</title>
+    <style>
+		body{
+			background-image:url(..//media/bird.jpg);
+			width: 100%;
+			height: 40%;
+		
+		}
+		td:hover{
+			color:teal;
+		}
+		td{
+			padding: 2%;
+		}
+		
+		h1{
+			color:saddlebrown;
+		}
+		h1:hover{
+			color:violet;
+		}
+  input[type=text] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: 0.3s ease;
+}
+
+input[type=password] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: 0.3s ease;
+}
+input[type=phone] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: 0.3s ease;
+}
+input[type=text] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: 0.3s ease;
+}
+input[type=email] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  color: black;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: 0.3s ease;
+}
+input[type=date] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: 0.3s ease;
+}
+#t1:hover{
+	color: black;
+}
+input[type=submit]{
+	width: 100%;
+	background-color:wheat;
+	color:black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 9px;
+	cursor: pointer;
+}
+input [type=submit]:hover{
+	background-color: chartreuse;
+}
+
+</style>
+	
+	</head>
+
+    <body>
+       
+        <form>
+			<fieldset>
+				<legend>
+					<h1>WELCOME TO CODAGE HABITATION</h1>
+				</legend>
+			
+			<table style=" margin-left: 35%;" >
+				<tr>
+					<td>First Name:</td>
+					<td><input id="tab" type="text" placeholder="First name" required></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td ><input type="text" placeholder="Last name" required></td>
+				</tr>
+				<tr>
+					<td>Contact No:</td>
+					<td><input type="phone" placeholder="1234567890" required></td>
+				</tr>
+				<tr>
+					<td>E-mail Id:</td>
+					<td><input type="email"placeholder="abc@gmail.com" required></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td id="t1"><input type="radio" name="Gender">Male
+					<input type="radio" name="Gender">Female</td>
+				</tr>
+				<tr>
+					<td>DOB:</td>
+					<td><input type="date"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td>
+						<textarea rows="5" cols="20"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td>Education Qualification:</td>
+					<td>
+						<select>
+							<option>Select Option</option>
+							<option>10+2</option>
+							<option>Graduated</option>
+							<option>Post Graduated</option>
+						</select>
+					</td>
+				</tr>
+					<tr>
+						<td>Username:</td>
+						<td><input type="text" placeholder="Username" required></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" placeholder="Password" required></td>
+					</tr>
+					<tr>
+						<td>Confirm Password</td>
+						<td><input type="password" placeholder="Confirm Password" required></td>
+					</tr>
+                   <tr>
+                    <td><input type="submit" value="Submit"></td>
+					<td><input type="submit" value="Reset"></td>
+				</tr>
+			</table>
+       
+        </fieldset>
+      </form> 
+    </body>
+</html>
